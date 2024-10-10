@@ -1,0 +1,67 @@
+<CONTROLLER CODE>
+
+Get: Camera, Wind Speed, Weather, Geolocation, Orientation APIs
+
+### 	Variable Declaration Section:
+
+	float Speed_Total
+	float Location_1
+	float Location_2
+	float axis_Y
+	float axis_X
+	int Horizontal_Alignment
+	int Vertical_Alignment
+	float Longitude
+	float Latitude
+
+
+### 	Functions Section:
+#	Most parameters will be from API information
+
+	Check Details Toggle {
+		If (this API is needed)
+			put on display_screen 
+		else
+			dont_show
+		}
+
+	Set Camera (CameraAPI_stuff) {
+		return Camera;
+		}
+	
+	Function Get_Speed (Location_1, Location 2) {
+
+		<calculate distance travelled from location 1 to location 2,
+		then how fast were the user travelling within the distance>
+
+		return Speed_Total 
+		}
+
+	Get Device Orientation (axis_Y, _axis_X) {
+		
+		axis_Y = Vertical_Alignment
+		axis_X = Horizontal_Alignment
+		
+		return Vertical_Alignment, Horizontal_Alignment
+		}
+		
+
+	ShowFacingDirection (Longitude, Latitude) {
+		
+		if (device is landscape) {
+		facing_direction - 90
+		}
+
+		<bunch of if else statement to figure out where is the thing facing>
+		
+		return current_facing_direction;
+
+	Wind_Speed (get wind speed from current location) {
+
+		return wind_speed;
+		}
+		
+		
+		
+	
+	

@@ -1,0 +1,38 @@
+C:\Users\Olsenn\Process Journal 222
+# DES222 Task 2 Process Journal 
+### Sean De Guzman - 1171469
+
+### Introduction
+This design process journal aims to record my decision making and thought process throughout the creation of an interactive website or at least a context aware innovation.
+
+### Initial Ideas
+The first two ideas that came to mind were an interactive drawing app then a recreational activity tracker app. 
+
+The web app uses geological coordinates and a user input, (either from the a mobile phone itself or an external hardware such as the microbit) to draw digital lines around the sorrounding environment.
+
+Second to that is  a web app that is context aware of the user's geological location. On top of that the web app can track the user's speed and tilt or lean angle as this app is heavily influenced for motorcycle riders who want to keep track of their activities.
+
+
+### Research
+From here on, the vr drawing app will be referred to as "option 1, design 1, or digital drawing app" and the recreational activity tracker app will be referred to as "option 2, design 2, or recreational activity tracker app" onwards.
+
+After some research about VR videos for option one, there came the trouble of finding a way to make the one screen video into two split screen video that is fitting for the VR headset to be used.
+
+### Pre Development
+
+
+### Design Process
+Sample Text
+
+### Implementation
+Sample Text
+
+### Integrity Testing & Adjustments
+Sample Text
+
+### Handover & Checklist
+Sample Text
+
+### Conclusion
+Sample Text
+
