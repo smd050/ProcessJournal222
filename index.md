@@ -124,7 +124,7 @@ As my last course of action, I drove to Uni in the middle of the night, tried th
 
 
 ### Depression
-To think that this event would befall me is so random and unfortunate, I just had a moment in time after buying an apple juice at Cafeteria C's vending machine and enjoy the light gusts of wind mixed with rains that night.
+To think that this event would befall me is so random and unfortunate, I just had a moment in time after buying an apple juice at Cafeteria C's vending machine and enjoy the light gusts of wind mixed with rains last night.
 
 ### Acceptance
 Reflection: It's sureal and I assume if I request an extension, it would fall under the subject of heavy investigation like "My dog ate my digital homework." kinda scenario even though we got no pets lol. I just concluded to come up with a solution after a quick nap, email course coordinators later on, pay a visit back to the library where staff will be more available than early morning.
@@ -166,8 +166,8 @@ Figuring out the math on which axis represents the landscape, lean left or right
 ![XYZ for lean Angle](images/telemetry.PNG)
 
 However, all of this was scrapped after it was tested that on Jay's laptop, it would only need the Y axis, it starts off from 0.00 degree and turns negative to the left and positive to the right in terms of values.
-This is then tranferred to an event handler to change the widgets and match current events at 100 milisecond event updates. (lost media)
-
+This is then tranferred to an event handler to change the widgets and match current events at 100 milisecond event updates. 
+![I dont even know why and why and why only why](images/JayLaptop.PNG)
 
 
 
@@ -184,11 +184,22 @@ Canvas is then added as the target for the media api to record dynamic web eleme
 
 When web app tested on another device, (mobile phone, lower screen size and resolution), web elements merges or mis-aligns. ![Phone resolution mismatch](images/PhoneInitial.PNG)
 
+I tried all i could for the lean meter, it only works for Jay's laptop for some unknown reason. It just displays 0.00 values on different devices or none at all, not even an exception, null value or error. 6 gruesome hours later, it has been figured out that it only works on Android Devices. It was perfectly fine.
+
+![Lean left](images/leanLeft.PNG)
+Left
+![Lean Stable](images/leanStable.PNG.PNG)
+Middle
+![Lean Right](images/leanRight.PNG)
+Right
+
+
 
 # Adjustments
 This is where i throw away(allegedly) what i learnt from week 9 about interactive websites. To solve the problem of the web page not properly loading when viewed on a smaller resolution device i.e. container elements merging, overshooting, or mis-aligning. 
 ![Fixed Screen Size Issue](images/FixScreen.PNG)
 The user then can manually zoom in or out on the web page without compromising UI elements.
+
 
 # Handover & Checklist
 ### Ratings are added to identify priority levels to which areas needs improvement or just possible optimisation. 1 being the lowest and 5 being the highest.
@@ -200,7 +211,7 @@ The user then can manually zoom in or out on the web page without compromising U
 
 ### ✔ Media Capture - 3, using canvas html elements, we can capture the overlays however, research and development still lacks as it can only capture text displays over graphical widgets. Otherwise the usage of the devices' personal screen recorder is much suitable and crop the media itself to capture the entire thing freely. 
 
-### ✔ Lean Angle Meter - 5, Works exeptionally well while portraying data given by the Y axis data.
+### ✔ Lean Angle Meter - 3, Works exeptionally well (ONLY WORKS FOR NON IOS DEVICES) while portraying data given by the Y axis data.
 
 ### ? Telemetry Data - 3, functional but tentative, probable cause of incosistency may be from variety of devices tested. Otherwise a general reformation of the code to fit whatever device is used may be considered (e.g. on Torin's laptop, everything works except speedometer, everything works on the phone except XYZ data, on Jay's device, Z data is missing but the lean angle meter only works for his laptop).
 
@@ -218,14 +229,24 @@ The user then can manually zoom in or out on the web page without compromising U
 
 
 # Conclusion & Findings
+Working with codepen widgets are confusing as it is not my code and it takes a long time for me to decipher how it is done. Moreover, the canvas does not like these widgets so I may use png images instead with transparent backgrounds to match with speed text.
+
+Always cross test between multiple platforms as results may highly vary from one another. Api are third-party tools or library that can have multiple functions underneath.
+
+Although the app is not fully functional, it is a prototype for future developments and improvments are already considered, this project will be version 1.0 upon submission and be continued development as a hobby project. Optimisation and more careful development will be done given the vast amount of timeframe for research and development.
 
 # Final Project Realisation
 I was lucky enough that bits and pieces of my web app was saved on github as a random "checkpoint", which is the term i used to commit changes and have the web app uploaded to the internet for my phone to access and preliminarily tests if the web app is working.
 
-Drove all the way to Chermside despite heavy rain and light hail along the freeway to borrow a laptop and rework the process journal from memory.
-![Against the odds](images/StormAndHail.PNG)
+The use of AI are kept minimum, toggle switches and the slider bar are from my DES221 web app for the microbit. However for javascript functions and such, ChatGPT is used to narrow down the abundance of information on the internet and generate examples for me to replicate matching my code logic needs and set rules and parameters.
+
+Overall, it is interesting to work on these kind of projects being a full stack developer. I could consider this as modern day inventors' craftsmanship.
+
+Drove all the way to Chermside despite heavy rain and light hail along the freeway to borrow a laptop and rework the process journal from memory. Evrything was a rollercoaster ride and I absolutely had fun during the entire process.
+![Against the odds](images/StormAndHail.PNG) 
 # Sean De Guzman
 ### 1171469
+## (:
 
 </body>
 </html>
