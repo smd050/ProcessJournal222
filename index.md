@@ -1,3 +1,14 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Markdown Document</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    
+
 # DES222 Task 2 Process Journal 
 ### Sean De Guzman - 1171469
 
@@ -90,23 +101,131 @@ Torin took heavy inspiration from the sketch we made weeks prior, we now have a 
 Me and Jay made pseudocode while Torin was making the mock design and some powerpoint presentation for next week. 
 ![Pseudocode by Me and Jay](images/Pseudocode.png)
 
+# Presentation and Feedback Reflection
+After the presentation on Week 10, it was as expected that Torin and Jay's  ideas would get the overall scope of the project get mixed up with broadly new ideas. Ideally it was only supposedly functional for Motorcycle/Bicycle or similar as a recreational tool to record and monitor activity data. The project then became broader by adding Wind speed, extra functions to measure land or those tools tradies use to measure land level. 
 
+# Mock Scenario
+From my experience on web developing, it is crucial to have a specified set of objectives and narrow each steps down to make things clear regarding what needs to be done and how should the sequence done accordingly.
+![Mock Scenario](images/Scenario.PNG)
 		
+# Laptop Crash Incident
+2024/11/14 - Roughly around 1 am, I finished my web app's final UI adjustments and minor optimisations for the back end code processes. I took around a 45 minute break for dinner and when I came back, the laptop suddenly isn't working. 
 
-	
+### Denial
+![Phone notes 1](images/Notes1.PNG) 
+
+### Anger
+![Phone notes 2](images/Notes2.PNG)
+
+### Bargaining
+I had to declutter stuff to find old laptops. Laptop 1 missing battery, Laptop 2 missing power supply, Laptop 3 also broken. ![3 laptops](images/3%20horsement%20of%20apocalypse.PNG)
+Still not convinced of the events, tried to find a different power plug around the house to fix the issue but to no avail.![Different Power Source](images/Microwave.PNG) ![No Lights](images/NoLights.PNG)
+As my last course of action, I drove to Uni in the middle of the night, tried the outlets near the library at ground floor but unfortunately, it didn't work either.
+
+
+### Depression
+To think that this event would befall me is so random and unfortunate, I just had a moment in time after buying an apple juice at Cafeteria C's vending machine and enjoy the light gusts of wind mixed with rains that night.
+
+### Acceptance
+Reflection: It's sureal and I assume if I request an extension, it would fall under the subject of heavy investigation like "My dog ate my digital homework." kinda scenario even though we got no pets lol. I just concluded to come up with a solution after a quick nap, email course coordinators later on, pay a visit back to the library where staff will be more available than early morning.
+![Noon, email](images/IrestMyCase.PNG)
+
+
+Everything from hereon will be written by memory. Missing images (specifically screenshots) will be described by text as thorougly as possible.
+
+
 
 # Implementation
-To be followed.
+After some meetings, the group decided to make their personal inpterpretation of the project by building their own design and such. Basing of from my sketches and Torin's mock design, we continue on. To distinguish my work, i planned to add widgets to the interface such as Speedometer, Lean Angle Meter, Drag Meter (direction of gravity pull), and any other additional details on undefined section of an overlay.
+
+
+
+At first the app supposedly needs around 7 APIs namely, camera, media capture, orientation, speed, location, wind, gravity, and etc. ![Api List](images/ApiList.PNG)
+As the project commences development and take form, things got narrowed down such as the speed API also uses the geo location to calculate distance travelled.
+ ![Speed = long + lat](images/SpeedAPI.PNG)
+
+We added switch toggles, when state is on or true, either shows corresponding dial or function. The Recording switch highlights the video area capture red. Red for the colour as it is distinguishable for both daylight and nightlight environmental scenarios.
+![Red Border Indicator](images/RedBorder.PNG)
+
+This is the initial contents planned for the overlay display.
+![Overlay Contents](images/overlay%20Planning2.PNG)
+
+Initially, we are set to have the main container to contain both video and toggles, followed by the video container in place so that the overlay container can inherit the size and overlay the graphics on top of it. Followed by the canvas where media capture recording takes place.
+![Plans to merge the UI and Overlay](images/UIandOverlay.PNG)
+
+We have the main-container, video-container, canvas, and the overlay-content in html planned to get things on top of each other and properly video capture.
+![html Sequence](images/htmlSequence.PNG)
+
+
+
+The lean angle math crisis was an intensive mental and imaginative thinking of how should the result should be.
+![Lean](images/LeanMath1.PNG)
+Some more graphical imagination of the widget and corresponding math data.
+![Lean](images/LeanMath2.PNG)
+Figuring out the math on which axis represents the landscape, lean left or right variables.
+![XYZ for lean Angle](images/telemetry.PNG)
+
+However, all of this was scrapped after it was tested that on Jay's laptop, it would only need the Y axis, it starts off from 0.00 degree and turns negative to the left and positive to the right in terms of values.
+This is then tranferred to an event handler to change the widgets and match current events at 100 milisecond event updates. (lost media)
+
+
+
 
 # Integrity & Unit Testing 
-To be followed.
+Module testing was done to implement the overlay (from a different project folder) into the main project. 
+![Overlay Planning 2](images/overlay%20Planning2.PNG)
+![Overlay Planning 1](images/overlay%20Planning.PNG)
+Once the overlay was done, copy pasted the contents and match accordingly to fit the main project requirments.
+(lost Media)
+![Overlay Done](images/RedBorder.PNG)
+
+Canvas is then added as the target for the media api to record dynamic web elements.
+
+
+When web app tested on another device, (mobile phone, lower screen size and resolution), web elements merges or mis-aligns. ![Phone resolution mismatch](images/PhoneInitial.PNG)
+
 
 # Adjustments
-To be followed
+This is where i throw away(allegedly) what i learnt from week 9 about interactive websites. To solve the problem of the web page not properly loading when viewed on a smaller resolution device i.e. container elements merging, overshooting, or mis-aligning. 
+![Fixed Screen Size Issue](images/FixScreen.PNG)
+The user then can manually zoom in or out on the web page without compromising UI elements.
 
 # Handover & Checklist
-To be followed.
+### Ratings are added to identify priority levels to which areas needs improvement or just possible optimisation. 1 being the lowest and 5 being the highest.
 
-# Conclusion
-To be followed.
+ ### Functionalities:
+### ✔ Recording - 3, Media and Audio are captured.  
 
+### ✔ Speed - 4 Works well, except a significant change in location is needed for it to functionally work, random numbers are added in interval to provide mock display to capture UI correspondence from data to widget. Otherwise display N/A or null. 
+
+### ✔ Media Capture - 3, using canvas html elements, we can capture the overlays however, research and development still lacks as it can only capture text displays over graphical widgets. Otherwise the usage of the devices' personal screen recorder is much suitable and crop the media itself to capture the entire thing freely. 
+
+### ✔ Lean Angle Meter - 5, Works exeptionally well while portraying data given by the Y axis data.
+
+### ? Telemetry Data - 3, functional but tentative, probable cause of incosistency may be from variety of devices tested. Otherwise a general reformation of the code to fit whatever device is used may be considered (e.g. on Torin's laptop, everything works except speedometer, everything works on the phone except XYZ data, on Jay's device, Z data is missing but the lean angle meter only works for his laptop).
+
+
+
+### User Interface:
+### ✔ Containers - 5, fixed and user device friendly, having the will to freely adjust the zoom without compromising web elements.
+### ✔ Overlays - 5, consistent overlay on top of the video-container.
+### ✔ Canvas - 3, works but needs further developments, especially where graphical elements cant be drawn() but text elements can be added.
+### ✔ Switches 5, toggleable, fun to mess around. Works as intended.
+### ✔ Lean Angle Meter - 5, corresponds well with current lean either left or right and perfectly indicates it.
+### ✔ Speedometer - 5, Works well and analysed from codepen to match web app: https://codepen.io/yudizsolutions/pen/LYaVmjx
+
+
+
+
+# Conclusion & Findings
+
+# Final Project Realisation
+I was lucky enough that bits and pieces of my web app was saved on github as a random "checkpoint", which is the term i used to commit changes and have the web app uploaded to the internet for my phone to access and preliminarily tests if the web app is working.
+
+Drove all the way to Chermside despite heavy rain and light hail along the freeway to borrow a laptop and rework the process journal from memory.
+![Against the odds](images/StormAndHail.PNG)
+# Sean De Guzman
+### 1171469
+
+</body>
+</html>
