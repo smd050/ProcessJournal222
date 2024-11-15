@@ -233,6 +233,9 @@ The use of AI are kept minimum, toggle switches and the slider bar are from my D
 Overall, it is interesting to work on these kind of projects being a full stack developer. I could consider this as modern day inventors' craftsmanship.
 
 Drove all the way to Chermside despite heavy rain and light hail along the freeway to borrow a laptop and rework the process journal from memory. Evrything was a rollercoaster ride and I absolutely had fun during the entire process.
+
+My web app link: https://smd050.github.io/Task3MobileTest/
+Showreel link: https://youtu.be/eZT8XhOblBk
 ![Against the odds](images/StormAndHail.PNG) 
 # Sean De Guzman
 ### 1171469
