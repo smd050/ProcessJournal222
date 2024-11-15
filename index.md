@@ -178,7 +178,7 @@ I tried all i could for the lean meter, it only works for Jay's laptop for some 
 
 ![Lean left](images/leanLeft.PNG)
 Left
-![Lean Stable](images/leanStable.PNG.PNG)
+![Lean Stable](images/leanStable.PNG)
 Middle
 ![Lean Right](images/leanRight.PNG)
 Right
