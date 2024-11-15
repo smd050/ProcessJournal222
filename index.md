@@ -1,14 +1,4 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>My Markdown Document</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
-</head>
-<body>
-    
-
 # DES222 Task 2 Process Journal 
 ### Sean De Guzman - 1171469
 
@@ -248,5 +238,4 @@ Drove all the way to Chermside despite heavy rain and light hail along the freew
 ### 1171469
 ## (:
 
-</body>
-</html>
+
